@@ -14,7 +14,7 @@ contract TokenERC721 is ERC721 {
         ERC20Address = TokenERC20(_ERC20Address);
     }
 
-    function mint(address to, uint256 tokenId) public {
+    function mint(address to, uint256 tokenId) private {
         _mint(to, tokenId);
     }
 
